@@ -18,6 +18,24 @@ class DemoController extends Controller
      */
     public function indexAction()
     {
+        /** @var \HarvestAPI $api */
+        $api = $this->get('harvest_app')->getApi();
+
+        $result = $api->getProjectEntries(3518972, \Harvest_Range::thisMonth());
+        if ($result->isSuccess()) {
+            $entries = $result->data;
+        }
+
+        var_dump($entries);die;
+        $days = array();
+
+        /** @var \Harvest_DayEntry $entry */
+        foreach ($entries as $date => $entry) {
+            $days[$date] = $entry->hours();
+        }
+
+        var_dump($days);die;
+
         return array();
     }
 
