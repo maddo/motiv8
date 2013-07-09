@@ -10,6 +10,7 @@ The purpose is to help one reach ones goals for hours worked
 * Symfony 2.3
 * Bootstrap 3.0?
 * HaPi HarvestApp API for PHP
+* Checkout: http://www.tidesdk.org/ for making it a desktop app :)
 
 Need to have an account in http://www.harvestapp.com.
 Currently, for simple needs (one project, one client) you can use HarvestApp for free.
