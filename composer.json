@@ -18,8 +18,22 @@
         "sensio/distribution-bundle": "2.3.*",
         "sensio/framework-extra-bundle": "2.3.*",
         "sensio/generator-bundle": "2.3.*",
-        "incenteev/composer-parameter-handler": "~2.0"
+        "incenteev/composer-parameter-handler": "~2.0",
+        "mattvick/harvest-app-bundle": "dev-master"
     },
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "mdbitz/hapi",
+                "version": "1.1.1",
+                "dist": {
+                    "url": "http://labs.mdbitz.com/wp-content/uploads/2010/10/HaPi-1.1.1.zip",
+                    "type": "zip"
+                }
+            }
+        }
+    ],
     "scripts": {
         "post-install-cmd": [
             "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
